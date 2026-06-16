@@ -2,7 +2,7 @@
 
 Welcome to **DevFolio**, my professional developer portfolio website designed to showcase my academic accomplishments, software internships, technical credentials, and engineering projects in a sleek, highly interactive single-page application.
 
-Live Site: *(Configure your GitHub Pages link here once deployed!)*
+Live Site: **[https://sksingh655.github.io/DevFolio/](https://sksingh655.github.io/DevFolio/)**
 
 ---
 
