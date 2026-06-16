@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumeet Kumar Singh | Developer Portfolio</title>
+  <meta name="description" content="Professional portfolio of Sumeet Kumar Singh, a Computer Science student specializing in AI, Data Analytics, and Workflow Automation. Explore projects, skills, and internships.">
+  
+  <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons for modern icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-accent">&lt;</span>Sumeet<span class="logo-accent">/&gt;</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link btn-connect-nav">Let's Connect</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Light/Dark Mode Toggle -->
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle light/dark theme">
+          <i data-lucide="moon" class="theme-icon moon"></i>
+          <i data-lucide="sun" class="theme-icon sun"></i>
+        </button>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="badge hero-badge">
+          <span class="pulse-dot"></span> Open for Internships
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Sumeet Kumar Singh</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          I build <span id="typing-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Computer Science student specializing in **Artificial Intelligence & Data Analytics**. Passionate about automating workflows, building intelligent agents, and analyzing complex datasets.
+        </p>
+        
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/sksinghgcet27/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://github.com/SKSingh655" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
+          </a>
+          <a href="https://x.com/sksingh655" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="lucide-x" style="width: 18px; height: 18px;">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="mailto:suren740sp@gmail.com" aria-label="Email" class="social-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+          <a href="https://wa.me/919334034110" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-whatsapp">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+
+      <!-- Glassmorphic Terminal Card -->
+      <div class="hero-visual">
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">sumeet_profile.sh</span>
+          </div>
+          <div class="terminal-body">
+            <div class="line"><span class="cmd-prompt">visitor $</span> cat sumeet.json</div>
+            <div class="line output">{</div>
+            <div class="line output indent">"name": "Sumeet Kumar Singh",</div>
+            <div class="line output indent">"specialization": "AI & Data Analytics",</div>
+            <div class="line output indent">"degree": "B.Tech in CSE (Artificial Intelligence)",</div>
+            <div class="line output indent">"university": "Galgotias College of Eng. & Tech",</div>
+            <div class="line output indent">"current_gpa": "7.5 / 10",</div>
+            <div class="line output indent">"diploma_gpa": "8.91 / 10 (DSEU)",</div>
+            <div class="line output indent">"location": "Greater Noida, India",</div>
+            <div class="line output indent">"status": "Ready to impact"</div>
+            <div class="line output">}</div>
+            <div class="line"><span class="cmd-prompt">visitor $</span> <span class="pulse-text">npm run build_future</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about" aria-label="Scroll down">
+        <i data-lucide="chevron-down" class="bounce-anim"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- About & Education Section -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tagline">About Me</span>
+        <h2 class="section-title">Academic & Personal Journey</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Bio & Details -->
+        <div class="about-bio">
+          <h3 class="about-heading">Who I Am</h3>
+          <p>
+            I am Sumeet — a Computer Science student at **Galgotias College of Engineering and Technology**, Greater Noida, building toward a career at the intersection of AI, data, and Python development. I enter this field with a solid technical foundation established during my Diploma in Computer Engineering, where I graduated with an outstanding CGPA of **8.91/10**.
+          </p>
+          <p>
+            My core focus is Generative AI and Machine Learning — understanding how models operate, rather than just how to invoke them. On the development side, my background includes automated scripting, data validation, client reporting, and system operations across multiple professional internships. I aim to write clean code that translates data into actionable automation.
+          </p>
+          
+          <div class="bio-stats">
+            <div class="stat-card">
+              <span class="stat-num">50k+</span>
+              <span class="stat-label">Data Points Analyzed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Internships Completed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">AI & Cloud Badges</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Education Timeline & Certifications -->
+        <div class="about-education">
+          <h3 class="about-heading">Education & Certifications</h3>
+          
+          <div class="tabs-container">
+            <div class="tabs-header">
+              <button class="tab-btn active" data-tab="education">Education</button>
+              <button class="tab-btn" data-tab="certifications">Certifications</button>
+            </div>
+            
+            <div class="tabs-content">
+              <!-- Education Tab -->
+              <div class="tab-panel active" id="tab-education">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2024 — 2027 (Expected)</span>
+                    <h4 class="timeline-title">B.Tech in Computer Science & Eng. (AI)</h4>
+                    <p class="timeline-institution">Galgotias College of Engineering and Technology, Greater Noida</p>
+                    <p class="timeline-desc">Specializing in AI architectures, Machine Learning algorithms, and Neural Networks. Entered as a lateral-entry student in the second year.</p>
+                  </div>
+                  
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2021 — 2024</span>
+                    <h4 class="timeline-title">Diploma in Computer Engineering</h4>
+                    <p class="timeline-institution">Delhi Skill and Entrepreneurship University (DSEU Shakarpur Campus)</p>
+                    <p class="timeline-desc">Acquired core computer science fundamentals. Graduated with an outstanding CGPA of **8.91 / 10**.</p>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Graduated 2016</span>
+                    <h4 class="timeline-title">10th Class (CBSE)</h4>
+                    <p class="timeline-institution">KV No.1 AFS Maharajpura, Gwalior</p>
+                    <p class="timeline-desc">Completed secondary education with a CGPA of **8.60 / 10**.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Certifications Tab -->
+              <div class="tab-panel" id="tab-certifications">
+                <ul class="cert-list">
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cert-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <div class="cert-info">
+                      <span class="cert-name">IBM Generative AI Engineering Professional Certificate</span>
+                      <span class="cert-issuer">IBM (Ongoing) — LLMs, Prompt Engineering, RAG Systems</span>
+                    </div>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cert-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <div class="cert-info">
+                      <span class="cert-name">IBM SkillBuild Professional Development & Career Readiness</span>
+                      <span class="cert-issuer">IBM (Winter 2025) — Leadership, Communication, Ethics</span>
+                    </div>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cert-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <div class="cert-info">
+                      <span class="cert-name">AWS Academy Graduate — Generative AI Foundations</span>
+                      <span class="cert-issuer">AWS — Bedrock, Prompt Tuning, RAG, AWS GenAI Architectures</span>
+                    </div>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cert-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <div class="cert-info">
+                      <span class="cert-name">Artificial Intelligence Essentials V2</span>
+                      <span class="cert-issuer">IBM — Neural Networks, Machine Learning Foundations</span>
+                    </div>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cert-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <div class="cert-info">
+                      <span class="cert-name">Generative AI Essentials</span>
+                      <span class="cert-issuer">IBM — Generative models, prompt design, and ethical constraints</span>
+                    </div>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cert-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <div class="cert-info">
+                      <span class="cert-name">Front-End Development Certification</span>
+                      <span class="cert-issuer">HTML, CSS, JavaScript, React Fundamentals</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section class="experience" id="experience">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tagline">My Career</span>
+        <h2 class="section-title">Professional Internships</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="experience-timeline">
+        <!-- Experience Item 1 -->
+        <div class="exp-item card">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <h3 class="exp-role">Research Analyst Intern</h3>
+              <h4 class="exp-company">Concentrix | <span class="exp-location">Gurgaon, India</span></h4>
+            </div>
+            <span class="exp-date badge">Jul 2025 — Sep 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Conducted comprehensive research analysis and data validation on **50,000+ data points** for an international client, achieving a **99% accuracy rate**.</li>
+            <li>Built **Python automation scripts** and Excel macros to streamline data collection workflows, reducing manual processing time by **35%** and improving operational efficiency.</li>
+            <li>Performed statistical analysis on large datasets to identify key trends, patterns, and actionable insights to support executive decision-making.</li>
+            <li>Collaborated with cross-functional teams to establish data quality standards and compile comprehensive technical documentation.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Data Validation</span>
+            <span class="tag">Statistical Analysis</span>
+            <span class="tag">Excel VBA</span>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="exp-item card">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <h3 class="exp-role">Junior Software Support Intern</h3>
+              <h4 class="exp-company">Aplus Solutions | <span class="exp-location">Remote</span></h4>
+            </div>
+            <span class="exp-date badge">Jan 2024 — Jun 2024</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Optimized complex SQL queries for .NET enterprise systems managing **100,000+ records**, boosting database performance by **25%** through indexing strategies and query profiling.</li>
+            <li>Participated in the full Software Development Life Cycle (SDLC), gaining hands-on experience in agile development methodologies and Scrum practices.</li>
+            <li>Resolved over **50+ technical support issues** with a **95% client satisfaction rate** using systematic debugging and root cause analysis.</li>
+            <li>Developed automated testing scripts and documentation, cutting regression testing duration by **20%**.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">SQL Server</span>
+            <span class="tag">.NET Core</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">SDLC</span>
+            <span class="tag">Debugging</span>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="exp-item card">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <h3 class="exp-role">IT Intern</h3>
+              <h4 class="exp-company">Trendsetter Skill Assessors | <span class="exp-location">Gurgaon, India</span></h4>
+            </div>
+            <span class="exp-date badge">Jul 2023 — Aug 2023</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Supported backend database operations and systems administration for enterprise clients, including high-profile digital transformation initiatives like **Tata Motors**.</li>
+            <li>Assisted in database migration activities, system integrations, and server performance monitoring.</li>
+            <li>Diagnosed system issues, ensuring reliability, uptime, and secure backups of core database schemas.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">SQL Databases</span>
+            <span class="tag">System Integration</span>
+            <span class="tag">Performance Monitoring</span>
+            <span class="tag">Tata Motors Project</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tagline">My Stack</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill Category 1 -->
+        <div class="skills-card card">
+          <div class="skills-card-header">
+            <div class="skill-icon-wrap cyan">
+              <i data-lucide="code-2"></i>
+            </div>
+            <h3>Programming & Data</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>Python (Pandas, NumPy)</span>
+                <span>Advanced</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill cyan-bar" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>SQL (PostgreSQL, MySQL)</span>
+                <span>Advanced</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill cyan-bar" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>HTML / CSS</span>
+                <span>Intermediate</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill cyan-bar" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>JavaScript</span>
+                <span>Intermediate</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill cyan-bar" style="width: 70%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Category 2 -->
+        <div class="skills-card card">
+          <div class="skills-card-header">
+            <div class="skill-icon-wrap purple">
+              <i data-lucide="brain-circuit"></i>
+            </div>
+            <h3>AI & Machine Learning</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>Generative AI & LLMs</span>
+                <span>Advanced</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill purple-bar" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>Prompt Engineering</span>
+                <span>Advanced</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill purple-bar" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>IBM Watsonx Assistant</span>
+                <span>Advanced</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill purple-bar" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>NLP (Natural Language Processing)</span>
+                <span>Intermediate</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill purple-bar" style="width: 75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Category 3 -->
+        <div class="skills-card card">
+          <div class="skills-card-header">
+            <div class="skill-icon-wrap green">
+              <i data-lucide="cpu"></i>
+            </div>
+            <h3>Automation & Tools</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>Advanced Excel (VBA, Macros)</span>
+                <span>Advanced</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill green-bar" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>N8N (Workflow Automation)</span>
+                <span>Learning</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill green-bar" style="width: 65%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>Git & GitHub</span>
+                <span>Advanced</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill green-bar" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span>IBM Cloud & AWS (Basics)</span>
+                <span>Intermediate</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill green-bar" style="width: 70%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tagline">My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <!-- Projects Category Filter -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI & ML</button>
+        <button class="filter-btn" data-filter="tools">Development & Tools</button>
+      </div>
+
+      <!-- Dynamic Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tagline">Get In Touch</span>
+        <h2 class="section-title">Let's Collaborate</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Contact Details -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Have an interesting internship opportunity, a project to collaborate on, or just want to chat? Reach out to me!</p>
+          
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="contact-icon-wrap">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="contact-detail-text">
+                <span>Email Me</span>
+                <a href="mailto:suren740sp@gmail.com">suren740sp@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-wrap">
+                <i data-lucide="phone"></i>
+              </div>
+              <div class="contact-detail-text">
+                <span>Call Me</span>
+                <a href="tel:+919334034110">+91 93340 34110</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-wrap">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div class="contact-detail-text">
+                <span>Location</span>
+                <p>Greater Noida, Delhi NCR, India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links-footer">
+            <a href="https://www.linkedin.com/in/sksinghgcet27/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://github.com/SKSingh655" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+            </a>
+            <a href="https://x.com/sksingh655" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-icon-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="lucide-x" style="width: 18px; height: 18px;">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/919334034110" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-icon-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-whatsapp">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Glassmorphic Contact Form -->
+        <div class="contact-form-card card">
+          <!-- Web3Forms Integration -->
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with Web3Forms Access Key later -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" id="web3forms-key">
+            <input type="hidden" name="subject" value="New Portfolio Contact Submission">
+            <input type="checkbox" name="botcheck" id="botcheck" style="display: none;">
+
+            <div class="form-group">
+              <label for="form-name">Name</label>
+              <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" name="message" rows="5" placeholder="Let's build something awesome..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send Message <i data-lucide="send" class="btn-icon"></i>
+            </button>
+            <div id="form-result" class="form-result"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="copyright">&copy; 2026 Sumeet Kumar Singh. Built with HTML, CSS, and JS.</p>
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

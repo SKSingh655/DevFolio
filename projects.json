@@ -1,0 +1,32 @@
+[
+  {
+    "title": "IBM EduGuide Campus Assistant",
+    "subtitle": "AI Research Project",
+    "category": "ai",
+    "tags": ["IBM Watsonx", "NLP", "IBM Cloud", "Python"],
+    "description": "Researched and deployed an intelligent campus chatbot using IBM Watsonx Assistant. Designed conversational flows handling 15+ query categories, serving 500+ students with a 60% reduction in response time.",
+    "github": "#",
+    "live": "#",
+    "status": "Completed"
+  },
+  {
+    "title": "Git & GitHub Learning Journey",
+    "subtitle": "Version Control Mastery",
+    "category": "tools",
+    "tags": ["Git", "GitHub", "Collaboration", "Markdown"],
+    "description": "A comprehensive repository documenting my path to mastering version control systems. Details branching strategies, merging, pull requests, and standard developer workflows.",
+    "github": "https://github.com/SKSingh655/Git-Learning-Journey",
+    "live": "https://github.com/SKSingh655/Git-Learning-Journey",
+    "status": "Completed"
+  },
+  {
+    "title": "GlobalPlus AI (GlobePulse)",
+    "subtitle": "AI-Powered News Platform",
+    "category": "ai",
+    "tags": ["Flask", "Generative AI", "Vector DB", "NLP"],
+    "description": "An intelligent global news platform designed to aggregate worldwide news, generate AI-powered summaries, translate content dynamically, and deliver personalized feeds based on user interests.",
+    "github": "https://github.com/SKSingh655/GlobePulse-flask",
+    "live": "#",
+    "status": "Upcoming"
+  }
+]
